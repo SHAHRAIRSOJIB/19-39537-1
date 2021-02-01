@@ -1,0 +1,6 @@
+E:\Csharp Codes\First progSln\First prog\bin\Debug\First prog.exe.config
+E:\Csharp Codes\First progSln\First prog\bin\Debug\First prog.exe
+E:\Csharp Codes\First progSln\First prog\bin\Debug\First prog.pdb
+E:\Csharp Codes\First progSln\First prog\obj\Debug\First prog.csprojResolveAssemblyReference.cache
+E:\Csharp Codes\First progSln\First prog\obj\Debug\First prog.exe
+E:\Csharp Codes\First progSln\First prog\obj\Debug\First prog.pdb
