@@ -11,6 +11,7 @@ namespace Lab3_1__main_lab
         string courseName;
         string courseCode;
         int coursCode;
+        int courseCredit;
 
         public string CourseName
         {
@@ -22,17 +23,18 @@ namespace Lab3_1__main_lab
             set { courseCode = value; }
             get { return courseCode; }
         }
-        public int courseCredit
+        public int CourseCredit
         {
             set { courseCredit = value; }
             get { return courseCredit; }
 
         }
+        public Course() { }
         public Course(string courseName, string courseCode, int courseCredit)
         {
             this.CourseName = courseName;
             this.CourseCode = courseCode;
-            this.courseCredit = courseCredit;
+            this.CourseCredit = courseCredit;
         }
         public void ShowCourseInfo()
         {

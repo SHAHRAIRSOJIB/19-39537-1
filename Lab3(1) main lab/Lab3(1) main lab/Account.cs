@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleProject1
 {
-    class Account
+    public class Account
     {
         private string accName;
         private string acid;
@@ -28,3 +28,33 @@ namespace SimpleProject1
             set { balance = value; }
             get { return balance; }
         }
+         public Account() { }
+
+          public Account(string accName, string acid, int balance)
+        {
+            this.AccName = accName;
+            this.Acid = acid;
+            this.Balance = balance;
+        }
+         public void Deposit(int amount)
+        {
+            this.Balance += amount;
+        }
+
+        public void Withdraw(int amount)
+        {
+            if(this.Balance < amount)
+            {
+                Console.WriteLine("[Error]: Amount is higher than balance!!");
+            }
+            else
+            {
+                this.Balance += amount;
+            }
+
+        }
+    }
+}
+
+
+

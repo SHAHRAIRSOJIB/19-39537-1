@@ -24,25 +24,35 @@ namespace Lab3_1__main_lab
             set { id = value; }
             get { return id; }
         }
-        public float Cgpa
+      
+        public string Department
         {
-            get { return this.cgpa; }
+            set { department = value; }
+            get { return department; }
+        }
+          public float Cgpa
+        {
+            set { cgpa = value; }
+            get { return cgpa; }
         }
         
         public Student() {
           
             credit = 145;
         }
-        public Student(string name, string id)
+        public Student(string name, string id, string department, float cgpa)
         {
             
             this.name = name;
             this.id = id;
+            this.department = department;
+            this.cgpa = cgpa;
            
         }
-        public void showInfo(){    
+        public void ShowInfo(){    
             Console.WriteLine("Name : " + name);
             Console.WriteLine("Id : " + id);
+            Console.WriteLine("Department : " +department);
             Console.WriteLine("Cgpa : " + cgpa);
         }
       
