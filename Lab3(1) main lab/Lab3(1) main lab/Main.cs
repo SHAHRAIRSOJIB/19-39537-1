@@ -16,19 +16,19 @@ namespace Lab3_1__main_lab
              
        
 
-            Student student1 = new Student();
+            Student stu1 = new Student();
 
-            student1.Name = "Munem Al Shahrair Sojib";
-            student1.Id = "19-39537-1";
-            student1.Department = "CSE";
-            student1.Cgpa = 3.31F;
+            stu1.Name = "Munem Al Shahrair Sojib";
+            stu1.Id = "19-39537-1";
+            stu1.Department = "CSE";
+            stu1.Cgpa = 3.31F;
 
-            student1.ShowInfo();
+            stu1.ShowInfo();
             Console.WriteLine("\n");
 
 
-            Student student2 = new Student("Rubayed noor", "19-39424-1", "CSE", 3.93F);
-            student2.ShowInfo();
+            Student stu2 = new Student("Rubayed noor", "19-39424-1", "CSE", 3.93F);
+            stu2.ShowInfo();
 
             Console.WriteLine("\n");
 
@@ -37,25 +37,25 @@ namespace Lab3_1__main_lab
 
         //Triangle
 
-            Triangle triangle1 = new Triangle();
+            Triangle tri1 = new Triangle();
 
-            triangle1.Val_X = 10;
-            triangle1.Val_Y = 30;
-            triangle1.Val_Z = 15;
+            tri1.Val_X = 10;
+            tri1.Val_Y = 30;
+            tri1.Val_Z = 15;
 
-            triangle1.ShowInfo();
-            triangle1.TestTriangle();
+            tri1.ShowInfo();
+            tri1.TestTriangle();
             Console.WriteLine("\n");
 
 
-            Triangle triangle2 = new Triangle(15, 30, 15);
-            triangle2.ShowInfo();
-            triangle2.TestTriangle();
+            Triangle tri2 = new Triangle(15, 30, 15);
+            tri2.ShowInfo();
+            tri2.TestTriangle();
             Console.WriteLine("\n");
 
-            Triangle triangle3 = new Triangle(15, 30, 10);
-            triangle3.ShowInfo();
-            triangle3.TestTriangle();
+            Triangle tri3 = new Triangle(15, 30, 10);
+            tri3.ShowInfo();
+            tri3.TestTriangle();
 
             Console.WriteLine("\n");
 
@@ -64,33 +64,33 @@ namespace Lab3_1__main_lab
             //Account
          
 
-            Account account1 = new Account();
+            Account ac1 = new Account();
 
-            account1.AccName = "Nayem Ahmed";
-            account1.Acid = "932126544";
-            account1.Balance = 45000;
-
-            Console.WriteLine("\n");
-
-
-            account1.Deposit(2000);
-            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}\n", account1.AccName, account1.Acid, account1.Balance);
-
-            account1.Withdraw(1500);
-            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}\n", account1.AccName, account1.Acid, account1.Balance);
+            ac1.AccName = "Nayem Ahmed";
+            ac1.Acid = "932126544";
+            ac1.Balance = 45000;
 
             Console.WriteLine("\n");
 
 
-            Account account2 = new Account("Rahim Khan", "2156442582", 90000);
+            ac1.Deposit(2000);
+            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}\n", ac1.AccName, ac1.Acid, ac1.Balance);
+
+            ac1.Withdraw(1500);
+            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}\n", ac1.AccName, ac1.Acid, ac1.Balance);
+
+            Console.WriteLine("\n");
+
+
+            Account ac2 = new Account("Rahim Khan", "2156442582", 90000);
 
       
 
-            account1.Deposit(25000);
-            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}\n", account1.AccName, account1.Acid, account1.Balance);
+            ac2.Deposit(25000);
+            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}\n", ac2.AccName, ac2.Acid, ac2.Balance);
 
-            account1.Withdraw(900);
-            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}", account1.AccName, account1.Acid, account1.Balance);
+            ac2.Withdraw(900);
+            Console.WriteLine("Name: {0}\nAcid: {1}\nBalance: {2}", ac2.AccName, ac2.Acid, ac2.Balance);
 
             Console.WriteLine("\n");
 
@@ -100,20 +100,20 @@ namespace Lab3_1__main_lab
 
           
 
-            Course course1 = new Course();
+            Course c1 = new Course();
 
-            course1.CourseName = "OOP2";
-            course1.CourseCode = "CSC00759";
-            course1.CourseCredit = 3;
+            c1.CourseName = "OOP2";
+            c1.CourseCode = "CSC00759";
+            c1.CourseCredit = 3;
 
-            course1.ShowCourseInfo();
+            c1.ShowCourseInfo();
             Console.WriteLine("\n");
 
 
 
 
-            Course course2 = new Course("OOP", "CSC00750", 3);
-            course2.ShowCourseInfo();
+            Course c2 = new Course("OOP", "CSC00750", 3);
+            c2.ShowCourseInfo();
             Console.WriteLine("\n");
 
         }
